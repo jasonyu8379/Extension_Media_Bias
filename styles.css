@@ -1,0 +1,89 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+
+body { width: 320px; background: #fff; }
+
+.popup-header {
+  background: #1a1a1a;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.popup-header-icon {
+  width: 28px; height: 28px;
+  background: #378ADD;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 700; color: #fff;
+}
+.popup-header-title { font-size: 14px; font-weight: 500; color: #fff; }
+.popup-header-sub { font-size: 11px; color: #888; margin-top: 1px; }
+
+.popup-body { padding: 16px; }
+
+.section-label {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #999;
+  margin-bottom: 4px;
+}
+.site-url {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+  word-break: break-all;
+}
+.divider { height: 0.5px; background: #ebebeb; margin: 14px 0; }
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+.status-badge.known { background: #EAF3DE; color: #3B6D11; }
+.status-badge.unknown { background: #F1EFE8; color: #5F5E5A; }
+.status-dot { width: 6px; height: 6px; border-radius: 50%; }
+.status-badge.known .status-dot { background: #639922; }
+.status-badge.unknown .status-dot { background: #888780; }
+
+.bias-value-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.bias-value-label { font-size: 13px; color: #555; }
+.bias-value-text { font-size: 13px; font-weight: 500; color: #1a1a1a; }
+
+.bias-bar-track {
+  height: 10px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #185FA5, #85B7EB, #D3D1C7, #F09595, #A32D2D);
+  position: relative;
+  margin: 8px 0 6px;
+}
+.bias-indicator {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #ccc;
+  transition: left 0.4s ease;
+}
+.bias-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #aaa;
+  margin-top: 6px;
+}

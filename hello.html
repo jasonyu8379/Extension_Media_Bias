@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="popup-header">
+      <div class="popup-header-icon">M</div>
+      <div>
+        <div class="popup-header-title">Media Bias Checker</div>
+        <div class="popup-header-sub" id="webCheck">Loading...</div>
+      </div>
+    </div>
+
+    <div class="popup-body">
+      <div class="section-label">Current site</div>
+      <div class="site-url" id="domain">—</div>
+
+      <div id="ifMatch" class="status-badge unknown">
+        <div class="status-dot"></div>
+        <span id="matchText">Checking...</span>
+      </div>
+
+      <div class="divider"></div>
+
+      <div id="biasSection">
+        <div class="bias-value-row">
+          <span class="bias-value-label">Political bias</span>
+          <span class="bias-value-text" id="bias">N/A</span>
+        </div>
+        <div class="bias-bar-track">
+          <div class="bias-indicator" id="indicator" style="left: 50%;"></div>
+        </div>
+        <div class="bias-labels">
+          <span>Far left</span><span>Left</span><span>Center</span><span>Right</span><span>Far right</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="logic.js"></script>
+  </body>
+</html>
